@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "GetVagas",
+  title: "GETvagas",
 };
 
 export default function RootLayout({ children }) {
