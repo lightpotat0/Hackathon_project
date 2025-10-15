@@ -1,0 +1,21 @@
+# node_modules deve ser ignorado
+node_modules/
+
+# Ignorar diretórios de build
+.next/
+out/
+
+# Arquivos de ambiente
+.env
+.env.*.local
+
+# IDEs e sistema
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+
