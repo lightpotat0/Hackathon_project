@@ -41,3 +41,55 @@ select::-ms-expand {
   background: transparent;
   color: inherit;
 }
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-blue-main: #2F80ED;
+  --color-green-main: #31B267;
+  --color-mid-tone: #29A384;
+  --color-blue-dark: #2B74D7;
+  --color-green-dark: #236C41;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-primary: var(--color-blue-main);
+  --color-secondary: var(--color-green-main);
+  --color-accent: var(--color-mid-tone);
+  --color-primary-dark: var(--color-blue-dark);
+  --color-secondary-dark: var(--color-green-dark);
+}
+
+select {
+  background-color: transparent;
+  color: inherit;
+}
+
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button,
+select::-webkit-calendar-picker-indicator {
+  background: transparent !important;
+  color: inherit;
+  opacity: 1;
+}
+
+select::-ms-expand {
+  background: transparent;
+  color: inherit;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 0 1.5rem;
+  margin: 0;
+  font-family: var(--font-sans);
+}
