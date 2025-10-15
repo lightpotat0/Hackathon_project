@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 function Login() {
@@ -8,6 +9,14 @@ function Login() {
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePassword = () => setShowPassword((prev) => !prev);
+
+    const router = useRouter();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        router.push("/home");
+    };
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-[var(--background)]">
@@ -19,7 +28,7 @@ function Login() {
             Faça login para continuar
             </p>
 
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-4">
             <div>
                 <label
                 htmlFor="email"
