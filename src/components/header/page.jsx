@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[var(--color-blue-main)] text-white py-6 shadow-md">
+    <header className="sticky top-0 z-50 bg-[var(--color-blue-main)] text-white py-6 shadow-md">
       <div className="max-w-7xl mx-auto px-8 flex items-center justify-between gap-4">
         <h1
           className="text-2xl font-bold cursor-pointer transition-transform duration-200 hover:scale-105"
