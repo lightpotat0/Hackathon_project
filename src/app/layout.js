@@ -1,4 +1,6 @@
+// app/layout.js (Server Component)
 import "./globals.css";
+import HeaderWrapper from "@/components/header/headerWrapper";
 
 export const metadata = {
   title: "GETvagas",
@@ -7,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <HeaderWrapper />
+        {children}
+      </body>
     </html>
   );
 }

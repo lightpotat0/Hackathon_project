@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function SignUp() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -24,6 +26,11 @@ export default function SignUp() {
     setMatch(confirmPassword === password);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push("/login");
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[var(--background)]">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8 border border-[var(--color-blue-dark)]">
@@ -34,7 +41,7 @@ export default function SignUp() {
           Preencha seus dados para realizar o cadastro
         </p>
 
-        <form className="space-y-5">
+        <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
             <label
               htmlFor="userType"

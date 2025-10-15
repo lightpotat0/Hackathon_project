@@ -2,7 +2,7 @@
 
 import { FaUserEdit, FaBriefcase, FaRegClock, FaSearch } from "react-icons/fa";
 
-function Home() {
+export default function Home() {
   const userName = "David";
 
   return (
@@ -24,14 +24,14 @@ function Home() {
           <div className="flex flex-col gap-4 w-full md:w-auto md:min-w-[260px]">
             <a
               href="/vagas"
-              className="bg-[var(--color-blue-main)] hover:bg-[var(--color-blue-dark)] text-white font-semibold py-3 px-8 rounded-xl transition duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-3"
+              className="bg-[var(--color-blue-main)] hover:bg-[var(--color-blue-dark)] text-white font-semibold py-3 px-8 rounded-xl transition duration-200 flex items-center justify-center gap-3"
             >
               <FaSearch className="text-lg" /> Buscar Vagas
             </a>
 
             <a
               href="/perfil/editar"
-              className="bg-[var(--color-green-main)] hover:bg-[var(--color-green-dark)] text-white font-semibold py-3 px-8 rounded-xl transition duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-3"
+              className="bg-[var(--color-green-main)] hover:bg-[var(--color-green-dark)] text-white font-semibold py-3 px-8 rounded-xl transition duration-200 flex items-center justify-center gap-3"
             >
               <FaUserEdit className="text-lg" /> Atualizar Perfil
             </a>
@@ -53,5 +53,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
