@@ -39,7 +39,8 @@ export default function Header() {
             Minhas Aplicações
           </a>
           <a
-            href="/perfil"
+            href="/profile"
+            onClick={() => router.push("/profile")}
             className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:right-0 hover:after:left-auto"
           >
             Meu Perfil
