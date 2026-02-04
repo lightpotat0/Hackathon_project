@@ -37,22 +37,39 @@ export default function Perfil() {
           </div>
         </div>
 
-        <div className="w-[100%] bg-white/10 rounded-xl shadow-lg flex flex-row items-center justify-center">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/0/93.png"
-            alt="Ícone de usuário"
-            className="w-52 h-52 border border-black rounded-full object-cover"
-          />
-          <h1 className="text-6xl font-bold text-center ml-10">{username}</h1>
-          <div className="text-center border border-black rounded-lg w-70 p-2 ml-14">
-            <h1 className="text-5xl font-bold">Pontuação</h1>
-            <p className="text-4xl font-bold">{points}</p>
+      
+        <section className="w-[100%]">
+          <div className="w-[100%] bg-white/10 rounded-xl flex flex-row items-center justify-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/0/93.png"
+              alt="Ícone de usuário"
+              className="w-52 h-52 border border-black rounded-full object-cover ml-15"
+            />
+            <h1 className="text-6xl font-bold text-center ml-5">{username}</h1>
+
+            <div className="text-center border border-black rounded-lg w-70 p-2 ml-5">
+              <h1 className="text-5xl font-bold">Pontuação</h1>
+              <p className="text-4xl font-bold">{points}</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <hq>Currículo</hq>
-          <p>Meu nome é Rodrigo</p>
-        </div>
+          
+          <div className="w-[100%] bg-white/10 rounded-xl shadow-lg flex flex-row">
+
+            <div className="w-[500%] rounded-lg w-70 p-2 ml-8">
+              <h1 className="text-5xl font-bold mt-10">Currículo</h1>
+              <p className="text-1xl mt-5"><b>Francisco Rodrigo | Software Engineer</b><br></br>
+                Especialista em desenvolvimento de software com foco em resultados de negócio e qualidade de 
+                código. Ao longo da minha trajetória, liderei a implementação de funcionalidades que reduziram 
+                o tempo de carregamento de aplicações e melhoraram a retenção de usuários. Domínio em arquitetura 
+                de microsserviços, integração de APIs e bancos de dados SQL/NoSQL.</p>
+            </div>
+
+            <div className="w-[100%] rounded-lg w-70 p-2 ml-8">
+             <h1 className="text-5xl font-bold mt-10"></h1>
+            </div>
+          </div>
+
+        </section>
       </div>
 
       {/* Rodapé / Observação */}
