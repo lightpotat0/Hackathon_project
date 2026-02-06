@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { FaUserEdit, FaBriefcase, FaRegClock, FaSearch } from "react-icons/fa";
+
 export default function Perfil() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const username = "Francisco Rodrigo";
   const points = "1240.00";
 
@@ -53,7 +56,8 @@ export default function Perfil() {
               </div>
 
               <button className="bg-gray-700 p-1 rounded-lg text-center shadow-md hover:bg-gray-600 transition-colors cursor-pointer">
-                <span className="font-semibold text-gray-200">Editar Perfil</span>
+                <a
+                  href="/profile/edit_profile" className="font-semibold text-gray-200">Editar Perfil</a>
               </button>
             </div>
           </div>
