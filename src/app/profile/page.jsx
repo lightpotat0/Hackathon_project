@@ -18,8 +18,8 @@ export default function Perfil() {
               { name: "Contribuidor", icon: "🏅" },
               { name: "Top 10", icon: "🔥" },
               { name: "Mentor", icon: "🎓" },
-              { name: "Ativo", icon: "⚡"},
-              { name: "Veterano", icon: "🕰️"  },
+              { name: "Ativo", icon: "⚡" },
+              { name: "Veterano", icon: "🕰️" },
               { name: "Ver mais" },
             ].map((badge, index) => (
               <div
@@ -34,7 +34,7 @@ export default function Perfil() {
         </aside>
 
         <main className="lg:w-3/4 w-full space-y-8">
-          
+
           <div className="bg-gray-800 p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6">
             <img
               src="https://cdn-icons-png.flaticon.com/512/0/93.png"
@@ -46,51 +46,104 @@ export default function Perfil() {
               <p className="text-blue-400 text-2xl mt-2">Software Engineer</p>
             </div>
 
-            <div className="bg-gray-700 p-4 rounded-lg text-center shadow-md min-w-[180px]">
-              <h1 className="text-xl font-semibold text-gray-400">Pontuação Total</h1>
-              <p className="text-4xl font-bold text-yellow-400 mt-1">{points}</p>
+            <div className="flex flex-col gap-2 min-w-[180px] mt-5">
+              <div className="bg-gray-700 p-2 rounded-lg text-center shadow-md">
+                <h1 className="text-xl font-semibold text-gray-400">Pontuação Total</h1>
+                <p className="text-4xl font-bold text-yellow-400">{points}</p>
+              </div>
+
+              <button className="bg-gray-700 p-1 rounded-lg text-center shadow-md hover:bg-gray-600 transition-colors cursor-pointer">
+                <span className="font-semibold text-gray-200">Editar Perfil</span>
+              </button>
             </div>
           </div>
-          
+
           <div className="bg-gray-800 p-8 rounded-xl shadow-lg">
             <h1 className="text-3xl font-bold mb-4 border-b border-gray-700 pb-2">Sumário Profissional</h1>
-            
+
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-2/3">
                 <p className="text-gray-300 leading-relaxed">
-                  Especialista em desenvolvimento de software com foco em resultados de negócio e qualidade de 
-                  código. Ao longo da minha trajetória, liderei a implementação de funcionalidades que reduziram 
-                  o tempo de carregamento de aplicações e melhoraram a retenção de usuários. Domínio em arquitetura 
+                  Especialista em desenvolvimento de software com foco em resultados de negócio e qualidade de
+                  código. Ao longo da minha trajetória, liderei a implementação de funcionalidades que reduziram
+                  o tempo de carregamento de aplicações e melhoraram a retenção de usuários. Domínio em arquitetura
                   de microsserviços, integração de APIs e bancos de dados SQL/NoSQL.
                 </p>
               </div>
-              </div>
-
-            <h1 className="text-3xl font-bold mb-4 border-b border-gray-700 pb-2">Experiências</h1>
-            
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="md:w-2/3">
-                <p className="text-gray-300 leading-relaxed">
-                  Especialista em desenvolvimento de software com foco em resultados de negócio e qualidade de 
-                  código. Ao longo da minha trajetória, liderei a implementação de funcionalidades que reduziram 
-                  o tempo de carregamento de aplicações e melhoraram a retenção de usuários. Domínio em arquitetura 
-                  de microsserviços, integração de APIs e bancos de dados SQL/NoSQL.
-                </p>
-              </div>
-
-              
 
               <div className="md:w-1/3">
                 <h1 className="text-2xl font-bold mb-4">Habilidades & Techs</h1>
                 <div className="flex flex-wrap gap-2">
-                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full">React</span>
-                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
-                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
-                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
-                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full">Microsserviços</span>
+                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">React</span>
+                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Tailwind CSS</span>
+                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Node.js</span>
+                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">SQL</span>
+                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Microsserviços</span>
                 </div>
               </div>
             </div>
+
+            <h1 className="text-3xl font-bold mb-4 border-b border-gray-700 pb-2 mt-10">Experiências</h1>
+
+            <div className="space-y-8">
+              <div className="flex flex-col md:flex-row gap-4 border-l-4 border-blue-500 pl-4">
+                <div className="md:w-1/4">
+                  <p className="text-blue-400 font-bold">Jan 2022 - Atual</p>
+                  <p className="text-gray-400 text-sm">Empresa Tech S.A.</p>
+                </div>
+                <div className="md:w-3/2">
+                  <h3 className="text-xl font-bold">Software Engineer Junior</h3>
+                  <p className="text-gray-300 mt-2 leading-relaxed">
+                    Liderança técnica no desenvolvimento de microserviços escaláveis utilizando Node.js e AWS.
+                    Melhoria de 40% na performance de queries do banco de dados.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h1 className="text-3xl font-bold mb-4 border-b border-gray-700 pb-2 mt-10">Certificados</h1>
+
+            <div className="space-y-8">
+              <div className="flex flex-col md:flex-row gap-4 border-l-4 border-blue-500 pl-4">
+                <div className="md:w-1/4">
+                  <p className="text-blue-400 font-bold">Jan 2025</p>
+                  <p className="text-gray-400 text-sm">Curso em Vídeo</p>
+                </div>
+                <div className="md:w-3/2">
+                  <h3 className="text-xl font-bold">Curso Avançado de .NET</h3>
+                  <div className="flex flex-wrap gap-2 mt-5">
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">React</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Tailwind CSS</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Node.js</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">SQL</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Microsserviços</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h1 className="text-3xl font-bold mb-4 border-b border-gray-700 pb-2 mt-10">Projetos</h1>
+
+            <div className="space-y-8">
+              <div className="flex flex-col md:flex-row gap-4 border-l-4 border-blue-500 pl-4">
+                <div className="md:w-1/4">
+                  <p className="text-blue-400 font-bold">Mar 2024</p>
+                  <p className="text-gray-400 text-sm">Criação</p>
+                </div>
+                <div className="md:w-3/2">
+                  <h3 className="text-xl font-bold">Market Shop</h3>
+                  <div className="flex flex-wrap gap-2 mt-5">
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">React</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Tailwind CSS</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Node.js</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">SQL</span>
+                    <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Microsserviços</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </main>
       </div>
