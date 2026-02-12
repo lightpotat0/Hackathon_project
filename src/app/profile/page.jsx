@@ -78,7 +78,9 @@ export default function Perfil() {
               <div className="md:w-1/3">
                 <h1 className="text-2xl font-bold mb-4">Habilidades & Techs</h1>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">React</span>
+                  <a className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer"
+                  href="/tags"
+                  >React</a>
                   <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Tailwind CSS</span>
                   <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">Node.js</span>
                   <span className="bg-blue-600 text-sm font-medium px-3 py-1 rounded-full transition duration-200 transform hover:scale-108 cursor-pointer">SQL</span>
