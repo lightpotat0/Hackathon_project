@@ -40,7 +40,7 @@ export default function EditProfile() {
       <div className="max-w-4xl mx-auto">
 
         <h1 className="text-4xl font-bold mb-8 text-center text-blue-400">
-          ✏️ Editar Perfil
+          Editar Perfil
         </h1>
 
         <form

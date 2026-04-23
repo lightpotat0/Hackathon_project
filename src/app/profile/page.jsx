@@ -14,15 +14,15 @@ export default function Perfil() {
 
         <aside className="lg:w-1/4 w-full bg-gray-800 p-6 rounded-xl shadow-lg h-fit">
           <h2 className="text-2xl font-bold mb-6 text-center text-blue-400">
-            🏆 Badges & Conquistas
+            Badges & Conquistas
           </h2>
           <div className="grid grid-cols-2 gap-3 cursor-pointer">
             {[
-              { name: "Contribuidor", icon: "🏅" },
-              { name: "Top 10", icon: "🔥" },
-              { name: "Mentor", icon: "🎓" },
-              { name: "Ativo", icon: "⚡" },
-              { name: "Veterano", icon: "🕰️" },
+              { name: "Contribuidor"},
+              { name: "Top 10"},
+              { name: "Mentor"},
+              { name: "Ativo"},
+              { name: "Veterano"},
               { name: "Ver mais" },
             ].map((badge, index) => (
               <div
