@@ -24,7 +24,7 @@ export default function Tags() {
             Framework baseado em Javascritpt
           </p>
 
-          <button className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <button className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
             Ver Projetos
           </button>
 

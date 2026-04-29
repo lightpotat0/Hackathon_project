@@ -5,11 +5,15 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-blue-main)] text-white py-10 mt-0 shadow-inner">
+    <footer className="bg-[var(--color-blue-main)] text-white py-10 pt-0 mt-0 shadow-inner">
       <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold">GETtrampo</h2>
-          <p className="text-sm text-gray-200 mt-1">
+          <img
+            src="/logo.png"
+            onClick={() => router.push("/home")}
+            className="w-30 p-0 brightness-0 invert"
+          />
+          <p className="text-sm text-gray-200 mt-0">
             Conectando talentos e oportunidades com tecnologia.
           </p>
         </div>
@@ -49,7 +53,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 text-center text-xs text-gray-300 border-t border-white/20 pt-4">
-        © {new Date().getFullYear()} GETtrampo. Todos os direitos reservados.
+        © {new Date().getFullYear()} BrioHub. Todos os direitos reservados.
       </div>
     </footer>
   );
